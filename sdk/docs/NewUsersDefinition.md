@@ -1,9 +1,9 @@
-# DocuSign.eSign.Model.NewUsersDefinition
+# IO.Swagger.Model.NewUsersDefinition
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**NewUsers** | [**List&lt;UserInformation&gt;**](UserInformation.md) |  | [optional] 
+**NewUsers** | [**List&lt;Users&gt;**](Users.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.AccountAddress
+# IO.Swagger.Model.AccountAddress
 ## Properties
 
 Name | Type | Description | Notes
@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **Country** | **string** | Specifies the country associated with the address. | [optional] 
 **Email** | **string** |  | [optional] 
 **Fax** | **string** |  | [optional] 
-**FirstName** | **string** | The user’s first name.  Maximum Length: 50 characters. | [optional] 
+**FirstName** | **string** | The user&#39;s first name.  Maximum Length: 50 characters. | [optional] 
 **LastName** | **string** |  | [optional] 
 **Phone** | **string** |  | [optional] 
 **PostalCode** | **string** |  | [optional] 

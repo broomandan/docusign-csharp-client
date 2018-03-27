@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.NewUser
+# IO.Swagger.Model.NewUser
 ## Properties
 
 Name | Type | Description | Notes

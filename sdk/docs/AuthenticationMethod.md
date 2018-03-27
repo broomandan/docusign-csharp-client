@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.AuthenticationMethod
+# IO.Swagger.Model.AuthenticationMethod
 ## Properties
 
 Name | Type | Description | Notes

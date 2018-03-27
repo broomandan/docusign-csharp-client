@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.AccountPasswordStrengthType
+# IO.Swagger.Model.AccountPasswordStrengthType
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.EventResult
+# IO.Swagger.Model.EventResult
 ## Properties
 
 Name | Type | Description | Notes

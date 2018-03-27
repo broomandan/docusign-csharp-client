@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.BulkRecipientsSummaryResponse
+# IO.Swagger.Model.BulkRecipientsSummaryResponse
 ## Properties
 
 Name | Type | Description | Notes

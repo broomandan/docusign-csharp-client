@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.BulkEnvelope
+# IO.Swagger.Model.BulkEnvelope
 ## Properties
 
 Name | Type | Description | Notes

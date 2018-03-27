@@ -1,54 +1,53 @@
-# DocuSign.eSign.Api.AuthenticationApi
+# IO.Swagger.Api.AuthenticationApi
 
 All URIs are relative to *https://www.docusign.net/restapi*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**DeleteSocialLogin**](AuthenticationApi.md#deletesociallogin) | **DELETE** /v2/accounts/{accountId}/users/{userId}/social | Deletes user&#39;s social account.
-[**GetOAuthToken**](AuthenticationApi.md#getoauthtoken) | **POST** /v2/oauth2/token | Creates an authorization token.
-[**ListSocialLogins**](AuthenticationApi.md#listsociallogins) | **GET** /v2/accounts/{accountId}/users/{userId}/social | Gets a list of a user&#39;s social accounts.
-[**Login**](AuthenticationApi.md#login) | **GET** /v2/login_information | Gets login information for a specified user.
-[**RevokeOAuthToken**](AuthenticationApi.md#revokeoauthtoken) | **POST** /v2/oauth2/revoke | Revokes an authorization token.
-[**UpdatePassword**](AuthenticationApi.md#updatepassword) | **PUT** /v2/login_information/{loginPart} | Updates the password for a specified user.
-[**UpdateSocialLogin**](AuthenticationApi.md#updatesociallogin) | **PUT** /v2/accounts/{accountId}/users/{userId}/social | Adds social account for a user.
+[**LoginInformationGetLoginInformation**](AuthenticationApi.md#logininformationgetlogininformation) | **GET** /v2/login_information | Gets login information for a specified user.
+[**LoginInformationPutLoginInformation**](AuthenticationApi.md#logininformationputlogininformation) | **PUT** /v2/login_information/{loginPart} | Updates the password for a specified user.
+[**OAuth2PostRevoke**](AuthenticationApi.md#oauth2postrevoke) | **POST** /v2/oauth2/revoke | **Deprecated** Revokes an authorization token. 
+[**OAuth2PostToken**](AuthenticationApi.md#oauth2posttoken) | **POST** /v2/oauth2/token | **Deprecated** Creates an authorization token. 
 
 
-<a name="deletesociallogin"></a>
-# **DeleteSocialLogin**
-> void DeleteSocialLogin (SocialAccountInformation socialAccountInformation = null, string accountId, string userId)
+<a name="logininformationgetlogininformation"></a>
+# **LoginInformationGetLoginInformation**
+> Authentication LoginInformationGetLoginInformation (string apiPassword = null, string embedAccountIdGuid = null, string includeAccountIdGuid = null, string loginSettings = null)
 
-Deletes user's social account.
+Gets login information for a specified user.
 
-Deletes a social account from a use's account.
+Retrieves account information for the authenticated user. Since the API is sessionless, this method does not actually log you in.  Instead, the method returns information about the account or accounts that the authenticated user has access to.  ###### Important: This method must only be used for the [Legacy Header Authentication][legacyheader] flow. Use the [`AccountServer: userInfo` method](../../../../guide/authentication/userinfo.html) for the OAuth2 Authentiction Code and Implicit Grant flows.  Each account has a `baseUrl` property, returned in the response. Use this `baseUrl` in all future API calls as the base of the request URL.  For each account, the `baseUrl` property includes the DocuSign server, the API version, and the `accountId` property.  It is not uncommon for an authenticated user to have access to more than one account (and more than one `baseUrl`). Depending on your integration's use case, your integration may choose to:  * Use the account whose `isDefault` field is `true`. * List the available accounts and ask the user to choose one. * Enable the system administrator to set the account that should be used by your integration.  If this method returns successfully, then you also know that the user has successfully authenticated with the DocuSign Signature platform.   [legacyheader]: ../../../../guide/authentication/legacy_auth.html [userinfo]: ../../../../guide/authentication/userinfo.html [authcode]: ../../../../guide/authentication/oa2_auth_code.md [implicit]: ../../../../guide/authentication/oa2_implicit.md 
 
 ### Example
 ```csharp
 using System;
 using System.Diagnostics;
-using DocuSign.eSign.Api;
-using DocuSign.eSign.Client;
-using DocuSign.eSign.Model;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
 
 namespace Example
 {
-    public class DeleteSocialLoginExample
+    public class LoginInformationGetLoginInformationExample
     {
         public void main()
         {
             
             var apiInstance = new AuthenticationApi();
-            var socialAccountInformation = new SocialAccountInformation(); // SocialAccountInformation |  (optional) 
-            var accountId = accountId_example;  // string | The external account number (int) or account ID Guid.
-            var userId = userId_example;  // string | The user ID of the user being accessed. Generally this is the user ID of the authenticated user, but if the authenticated user is an Admin on the account, this may be another user the Admin user is accessing.
+            var apiPassword = apiPassword_example;  // string | Reserved for DocuSign.  (optional) 
+            var embedAccountIdGuid = embedAccountIdGuid_example;  // string |  (optional) 
+            var includeAccountIdGuid = includeAccountIdGuid_example;  // string | When set to **true**, shows the account ID GUID in the response. (optional) 
+            var loginSettings = loginSettings_example;  // string | Determines whether login settings are returned in the response.  Valid Values:  * all -  All the login settings are returned.  * none - no login settings are returned. (optional) 
 
             try
             {
-                // Deletes user's social account.
-                apiInstance.DeleteSocialLogin(socialAccountInformation, accountId, userId);
+                // Gets login information for a specified user.
+                Authentication result = apiInstance.LoginInformationGetLoginInformation(apiPassword, embedAccountIdGuid, includeAccountIdGuid, loginSettings);
+                Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling AuthenticationApi.DeleteSocialLogin: " + e.Message );
+                Debug.Print("Exception when calling AuthenticationApi.LoginInformationGetLoginInformation: " + e.Message );
             }
         }
     }
@@ -59,9 +58,73 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **socialAccountInformation** | [**SocialAccountInformation**](SocialAccountInformation.md)|  | [optional] 
- **accountId** | **string**| The external account number (int) or account ID Guid. | 
- **userId** | **string**| The user ID of the user being accessed. Generally this is the user ID of the authenticated user, but if the authenticated user is an Admin on the account, this may be another user the Admin user is accessing. | 
+ **apiPassword** | **string**| Reserved for DocuSign.  | [optional] 
+ **embedAccountIdGuid** | **string**|  | [optional] 
+ **includeAccountIdGuid** | **string**| When set to **true**, shows the account ID GUID in the response. | [optional] 
+ **loginSettings** | **string**| Determines whether login settings are returned in the response.  Valid Values:  * all -  All the login settings are returned.  * none - no login settings are returned. | [optional] 
+
+### Return type
+
+[**Authentication**](Authentication.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="logininformationputlogininformation"></a>
+# **LoginInformationPutLoginInformation**
+> void LoginInformationPutLoginInformation (string loginPart, UserPasswordInformation userPasswordInformation = null)
+
+Updates the password for a specified user.
+
+Updates the password for a specified user.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class LoginInformationPutLoginInformationExample
+    {
+        public void main()
+        {
+            
+            var apiInstance = new AuthenticationApi();
+            var loginPart = loginPart_example;  // string | Currently, only the value **password** is supported.
+            var userPasswordInformation = new UserPasswordInformation(); // UserPasswordInformation |  (optional) 
+
+            try
+            {
+                // Updates the password for a specified user.
+                apiInstance.LoginInformationPutLoginInformation(loginPart, userPasswordInformation);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling AuthenticationApi.LoginInformationPutLoginInformation: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **loginPart** | **string**| Currently, only the value **password** is supported. | 
+ **userPasswordInformation** | [**UserPasswordInformation**](UserPasswordInformation.md)|  | [optional] 
 
 ### Return type
 
@@ -78,25 +141,25 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="getoauthtoken"></a>
-# **GetOAuthToken**
-> OauthAccess GetOAuthToken ()
+<a name="oauth2postrevoke"></a>
+# **OAuth2PostRevoke**
+> void OAuth2PostRevoke ()
 
-Creates an authorization token.
+**Deprecated** Revokes an authorization token. 
 
-Creates an OAuth2 authorization server token endpoint.
+**Deprecated**  Revokes an OAuth2 authorization server token. After the revocation is complete, a caller must re-authenticate to restore access. 
 
 ### Example
 ```csharp
 using System;
 using System.Diagnostics;
-using DocuSign.eSign.Api;
-using DocuSign.eSign.Client;
-using DocuSign.eSign.Model;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
 
 namespace Example
 {
-    public class GetOAuthTokenExample
+    public class OAuth2PostRevokeExample
     {
         public void main()
         {
@@ -105,13 +168,70 @@ namespace Example
 
             try
             {
-                // Creates an authorization token.
-                OauthAccess result = apiInstance.GetOAuthToken();
+                // **Deprecated** Revokes an authorization token. 
+                apiInstance.OAuth2PostRevoke();
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling AuthenticationApi.OAuth2PostRevoke: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="oauth2posttoken"></a>
+# **OAuth2PostToken**
+> OauthAccess OAuth2PostToken ()
+
+**Deprecated** Creates an authorization token. 
+
+**Deprecated**  Creates an OAuth2 authorization server token endpoint. 
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class OAuth2PostTokenExample
+    {
+        public void main()
+        {
+            
+            var apiInstance = new AuthenticationApi();
+
+            try
+            {
+                // **Deprecated** Creates an authorization token. 
+                OauthAccess result = apiInstance.OAuth2PostToken();
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling AuthenticationApi.GetOAuthToken: " + e.Message );
+                Debug.Print("Exception when calling AuthenticationApi.OAuth2PostToken: " + e.Message );
             }
         }
     }
@@ -124,323 +244,6 @@ This endpoint does not need any parameter.
 ### Return type
 
 [**OauthAccess**](OauthAccess.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="listsociallogins"></a>
-# **ListSocialLogins**
-> UserSocialIdResult ListSocialLogins (string accountId, string userId)
-
-Gets a list of a user's social accounts.
-
-Retrieves a list of social accounts linked to a user's account.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using DocuSign.eSign.Api;
-using DocuSign.eSign.Client;
-using DocuSign.eSign.Model;
-
-namespace Example
-{
-    public class ListSocialLoginsExample
-    {
-        public void main()
-        {
-            
-            var apiInstance = new AuthenticationApi();
-            var accountId = accountId_example;  // string | The external account number (int) or account ID Guid.
-            var userId = userId_example;  // string | The user ID of the user being accessed. Generally this is the user ID of the authenticated user, but if the authenticated user is an Admin on the account, this may be another user the Admin user is accessing.
-
-            try
-            {
-                // Gets a list of a user's social accounts.
-                UserSocialIdResult result = apiInstance.ListSocialLogins(accountId, userId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling AuthenticationApi.ListSocialLogins: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **accountId** | **string**| The external account number (int) or account ID Guid. | 
- **userId** | **string**| The user ID of the user being accessed. Generally this is the user ID of the authenticated user, but if the authenticated user is an Admin on the account, this may be another user the Admin user is accessing. | 
-
-### Return type
-
-[**UserSocialIdResult**](UserSocialIdResult.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="login"></a>
-# **Login**
-> LoginInformation Login (string apiPassword = null, string embedAccountIdGuid = null, string includeAccountIdGuid = null, string loginSettings = null)
-
-Gets login information for a specified user.
-
-Retrieves login information for a specified user. Each account that is associated with the login credentials is listed. You can use the returned information to determine whether a user is authenticated and select an account to use in future operations.    The `baseUrl` property, returned in the response, is used in all future API calls as the base of the request URL. The `baseUrl` property contains the DocuSign server, the API version, and the `accountId` property that is used for the login. This request uses your DocuSign credentials to retrieve the account information.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using DocuSign.eSign.Api;
-using DocuSign.eSign.Client;
-using DocuSign.eSign.Model;
-
-namespace Example
-{
-    public class LoginExample
-    {
-        public void main()
-        {
-            
-            var apiInstance = new AuthenticationApi();
-            var apiPassword = apiPassword_example;  // string | When set to **true**, shows the account API password in the response. (optional) 
-            var embedAccountIdGuid = embedAccountIdGuid_example;  // string |  (optional) 
-            var includeAccountIdGuid = includeAccountIdGuid_example;  // string | When set to **true**, shows the account ID GUID in the response. (optional) 
-            var loginSettings = loginSettings_example;  // string | Determines whether login settings are returned in the response.  Valid Values:  * all -  All the login settings are returned.  * none - no login settings are returned. (optional) 
-
-            try
-            {
-                // Gets login information for a specified user.
-                LoginInformation result = apiInstance.Login(apiPassword, embedAccountIdGuid, includeAccountIdGuid, loginSettings);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling AuthenticationApi.Login: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **apiPassword** | **string**| When set to **true**, shows the account API password in the response. | [optional] 
- **embedAccountIdGuid** | **string**|  | [optional] 
- **includeAccountIdGuid** | **string**| When set to **true**, shows the account ID GUID in the response. | [optional] 
- **loginSettings** | **string**| Determines whether login settings are returned in the response.  Valid Values:  * all -  All the login settings are returned.  * none - no login settings are returned. | [optional] 
-
-### Return type
-
-[**LoginInformation**](LoginInformation.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="revokeoauthtoken"></a>
-# **RevokeOAuthToken**
-> void RevokeOAuthToken ()
-
-Revokes an authorization token.
-
-Revokes an OAuth2 authorization server token. After the revocation is complete, a caller must re-authenticate to restore access.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using DocuSign.eSign.Api;
-using DocuSign.eSign.Client;
-using DocuSign.eSign.Model;
-
-namespace Example
-{
-    public class RevokeOAuthTokenExample
-    {
-        public void main()
-        {
-            
-            var apiInstance = new AuthenticationApi();
-
-            try
-            {
-                // Revokes an authorization token.
-                apiInstance.RevokeOAuthToken();
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling AuthenticationApi.RevokeOAuthToken: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-This endpoint does not need any parameter.
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="updatepassword"></a>
-# **UpdatePassword**
-> void UpdatePassword (UserPasswordInformation userPasswordInformation = null, string loginPart)
-
-Updates the password for a specified user.
-
-Updates the password for a specified user.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using DocuSign.eSign.Api;
-using DocuSign.eSign.Client;
-using DocuSign.eSign.Model;
-
-namespace Example
-{
-    public class UpdatePasswordExample
-    {
-        public void main()
-        {
-            
-            var apiInstance = new AuthenticationApi();
-            var userPasswordInformation = new UserPasswordInformation(); // UserPasswordInformation |  (optional) 
-            var loginPart = loginPart_example;  // string | Currently, only the value **password** is supported.
-
-            try
-            {
-                // Updates the password for a specified user.
-                apiInstance.UpdatePassword(userPasswordInformation, loginPart);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling AuthenticationApi.UpdatePassword: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **userPasswordInformation** | [**UserPasswordInformation**](UserPasswordInformation.md)|  | [optional] 
- **loginPart** | **string**| Currently, only the value **password** is supported. | 
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="updatesociallogin"></a>
-# **UpdateSocialLogin**
-> void UpdateSocialLogin (SocialAccountInformation socialAccountInformation = null, string accountId, string userId)
-
-Adds social account for a user.
-
-Adds a new social account to a user's account.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using DocuSign.eSign.Api;
-using DocuSign.eSign.Client;
-using DocuSign.eSign.Model;
-
-namespace Example
-{
-    public class UpdateSocialLoginExample
-    {
-        public void main()
-        {
-            
-            var apiInstance = new AuthenticationApi();
-            var socialAccountInformation = new SocialAccountInformation(); // SocialAccountInformation |  (optional) 
-            var accountId = accountId_example;  // string | The external account number (int) or account ID Guid.
-            var userId = userId_example;  // string | The user ID of the user being accessed. Generally this is the user ID of the authenticated user, but if the authenticated user is an Admin on the account, this may be another user the Admin user is accessing.
-
-            try
-            {
-                // Adds social account for a user.
-                apiInstance.UpdateSocialLogin(socialAccountInformation, accountId, userId);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling AuthenticationApi.UpdateSocialLogin: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **socialAccountInformation** | [**SocialAccountInformation**](SocialAccountInformation.md)|  | [optional] 
- **accountId** | **string**| The external account number (int) or account ID Guid. | 
- **userId** | **string**| The user ID of the user being accessed. Generally this is the user ID of the authenticated user, but if the authenticated user is an Admin on the account, this may be another user the Admin user is accessing. | 
-
-### Return type
-
-void (empty response body)
 
 ### Authorization
 

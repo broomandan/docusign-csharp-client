@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.CorrectViewRequest
+# IO.Swagger.Model.CorrectViewRequest
 ## Properties
 
 Name | Type | Description | Notes

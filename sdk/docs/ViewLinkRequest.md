@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.ViewLinkRequest
+# IO.Swagger.Model.ViewLinkRequest
 ## Properties
 
 Name | Type | Description | Notes

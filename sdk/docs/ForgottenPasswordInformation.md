@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.ForgottenPasswordInformation
+# IO.Swagger.Model.ForgottenPasswordInformation
 ## Properties
 
 Name | Type | Description | Notes

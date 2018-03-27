@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.SocialAuthentication
+# IO.Swagger.Model.SocialAuthentication
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.PowerFormFormDataRecipient
+# IO.Swagger.Model.PowerFormFormDataRecipient
 ## Properties
 
 Name | Type | Description | Notes

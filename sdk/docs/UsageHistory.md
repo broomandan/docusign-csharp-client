@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.UsageHistory
+# IO.Swagger.Model.UsageHistory
 ## Properties
 
 Name | Type | Description | Notes

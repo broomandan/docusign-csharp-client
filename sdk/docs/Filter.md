@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.Filter
+# IO.Swagger.Model.Filter
 ## Properties
 
 Name | Type | Description | Notes
@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **FolderIds** | **string** |  | [optional] 
 **FromDateTime** | **string** |  | [optional] 
 **IsTemplate** | **string** |  | [optional] 
-**Order** | **string** |  | [optional] 
+**Order** | **string** | An optional value that sets the direction order used to sort the item list.   Valid values are:   * asc &#x3D; ascending sort order * desc &#x3D; descending sort order  | [optional] 
 **OrderBy** | **string** |  | [optional] 
 **SearchTarget** | **string** |  | [optional] 
 **SearchText** | **string** |  | [optional] 

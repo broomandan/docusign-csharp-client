@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.AccountPasswordExpirePasswordDays
+# IO.Swagger.Model.AccountPasswordExpirePasswordDays
 ## Properties
 
 Name | Type | Description | Notes

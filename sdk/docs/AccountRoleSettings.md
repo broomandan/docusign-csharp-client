@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.AccountRoleSettings
+# IO.Swagger.Model.AccountRoleSettings
 ## Properties
 
 Name | Type | Description | Notes

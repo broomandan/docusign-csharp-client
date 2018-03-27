@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.DateStampProperties
+# IO.Swagger.Model.DateStampProperties
 ## Properties
 
 Name | Type | Description | Notes

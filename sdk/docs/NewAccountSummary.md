@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.NewAccountSummary
+# IO.Swagger.Model.NewAccountSummary
 ## Properties
 
 Name | Type | Description | Notes

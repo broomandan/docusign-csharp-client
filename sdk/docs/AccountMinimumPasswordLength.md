@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.AccountMinimumPasswordLength
+# IO.Swagger.Model.AccountMinimumPasswordLength
 ## Properties
 
 Name | Type | Description | Notes

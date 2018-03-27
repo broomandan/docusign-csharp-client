@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.BrandRequest
+# IO.Swagger.Model.BrandRequest
 ## Properties
 
 Name | Type | Description | Notes

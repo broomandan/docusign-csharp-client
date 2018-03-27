@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.BulkRecipientTabLabel
+# IO.Swagger.Model.BulkRecipientTabLabel
 ## Properties
 
 Name | Type | Description | Notes

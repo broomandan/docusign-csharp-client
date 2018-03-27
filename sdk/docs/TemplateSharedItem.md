@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.TemplateSharedItem
+# IO.Swagger.Model.TemplateSharedItem
 ## Properties
 
 Name | Type | Description | Notes

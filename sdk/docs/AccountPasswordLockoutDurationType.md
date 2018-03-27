@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.AccountPasswordLockoutDurationType
+# IO.Swagger.Model.AccountPasswordLockoutDurationType
 ## Properties
 
 Name | Type | Description | Notes

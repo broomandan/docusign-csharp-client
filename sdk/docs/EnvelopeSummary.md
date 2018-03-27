@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.EnvelopeSummary
+# IO.Swagger.Model.EnvelopeSummary
 ## Properties
 
 Name | Type | Description | Notes

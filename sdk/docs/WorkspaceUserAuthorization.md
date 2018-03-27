@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.WorkspaceUserAuthorization
+# IO.Swagger.Model.WorkspaceUserAuthorization
 ## Properties
 
 Name | Type | Description | Notes

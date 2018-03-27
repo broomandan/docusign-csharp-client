@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.SettingsMetadata
+# IO.Swagger.Model.SettingsMetadata
 ## Properties
 
 Name | Type | Description | Notes

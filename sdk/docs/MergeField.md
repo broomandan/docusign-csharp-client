@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.MergeField
+# IO.Swagger.Model.MergeField
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.SamlAssertionAttribute
+# IO.Swagger.Model.SamlAssertionAttribute
 ## Properties
 
 Name | Type | Description | Notes

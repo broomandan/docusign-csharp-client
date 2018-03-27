@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.AccountPasswordQuestionsRequired
+# IO.Swagger.Model.AccountPasswordQuestionsRequired
 ## Properties
 
 Name | Type | Description | Notes

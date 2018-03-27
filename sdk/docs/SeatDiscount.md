@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.SeatDiscount
+# IO.Swagger.Model.SeatDiscount
 ## Properties
 
 Name | Type | Description | Notes

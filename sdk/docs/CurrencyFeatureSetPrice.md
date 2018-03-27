@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.CurrencyFeatureSetPrice
+# IO.Swagger.Model.CurrencyFeatureSetPrice
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.Ssn4InformationInput
+# IO.Swagger.Model.Ssn4InformationInput
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.UserAccountManagementGranularInformation
+# IO.Swagger.Model.UserAccountManagementGranularInformation
 ## Properties
 
 Name | Type | Description | Notes

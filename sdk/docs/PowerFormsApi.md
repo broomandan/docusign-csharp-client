@@ -1,98 +1,37 @@
-# DocuSign.eSign.Api.PowerFormsApi
+# IO.Swagger.Api.PowerFormsApi
 
 All URIs are relative to *https://www.docusign.net/restapi*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**CreatePowerForm**](PowerFormsApi.md#createpowerform) | **POST** /v2/accounts/{accountId}/powerforms | Creates a new PowerForm.
-[**DeletePowerForm**](PowerFormsApi.md#deletepowerform) | **DELETE** /v2/accounts/{accountId}/powerforms/{powerFormId} | Delete a PowerForm.
-[**DeletePowerForms**](PowerFormsApi.md#deletepowerforms) | **DELETE** /v2/accounts/{accountId}/powerforms | Deletes one or more PowerForms
-[**GetPowerForm**](PowerFormsApi.md#getpowerform) | **GET** /v2/accounts/{accountId}/powerforms/{powerFormId} | Returns a single PowerForm.
-[**GetPowerFormData**](PowerFormsApi.md#getpowerformdata) | **GET** /v2/accounts/{accountId}/powerforms/{powerFormId}/form_data | Returns the form data associated with the usage of a PowerForm.
-[**ListPowerFormSenders**](PowerFormsApi.md#listpowerformsenders) | **GET** /v2/accounts/{accountId}/powerforms/senders | Returns the list of PowerForms available to the user.
-[**ListPowerForms**](PowerFormsApi.md#listpowerforms) | **GET** /v2/accounts/{accountId}/powerforms | Returns the list of PowerForms available to the user.
-[**UpdatePowerForm**](PowerFormsApi.md#updatepowerform) | **PUT** /v2/accounts/{accountId}/powerforms/{powerFormId} | Creates a new PowerForm.
+[**PowerFormsDeletePowerForm**](PowerFormsApi.md#powerformsdeletepowerform) | **DELETE** /v2/accounts/{accountId}/powerforms/{powerFormId} | Delete a PowerForm.
+[**PowerFormsDeletePowerFormsList**](PowerFormsApi.md#powerformsdeletepowerformslist) | **DELETE** /v2/accounts/{accountId}/powerforms | Deletes one or more PowerForms
+[**PowerFormsGetPowerForm**](PowerFormsApi.md#powerformsgetpowerform) | **GET** /v2/accounts/{accountId}/powerforms/{powerFormId} | Returns a single PowerForm.
+[**PowerFormsGetPowerFormsList**](PowerFormsApi.md#powerformsgetpowerformslist) | **GET** /v2/accounts/{accountId}/powerforms | Returns the list of PowerForms available to the user.
+[**PowerFormsGetPowerFormsSenders**](PowerFormsApi.md#powerformsgetpowerformssenders) | **GET** /v2/accounts/{accountId}/powerforms/senders | Returns the list of PowerForms available to the user.
+[**PowerFormsPostPowerForm**](PowerFormsApi.md#powerformspostpowerform) | **POST** /v2/accounts/{accountId}/powerforms | Creates a new PowerForm.
+[**PowerFormsPutPowerForm**](PowerFormsApi.md#powerformsputpowerform) | **PUT** /v2/accounts/{accountId}/powerforms/{powerFormId} | Creates a new PowerForm.
 
 
-<a name="createpowerform"></a>
-# **CreatePowerForm**
-> PowerForm CreatePowerForm (PowerForm powerForm = null, string accountId)
-
-Creates a new PowerForm.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using DocuSign.eSign.Api;
-using DocuSign.eSign.Client;
-using DocuSign.eSign.Model;
-
-namespace Example
-{
-    public class CreatePowerFormExample
-    {
-        public void main()
-        {
-            
-            var apiInstance = new PowerFormsApi();
-            var powerForm = new PowerForm(); // PowerForm |  (optional) 
-            var accountId = accountId_example;  // string | The external account number (int) or account ID Guid.
-
-            try
-            {
-                // Creates a new PowerForm.
-                PowerForm result = apiInstance.CreatePowerForm(powerForm, accountId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling PowerFormsApi.CreatePowerForm: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **powerForm** | [**PowerForm**](PowerForm.md)|  | [optional] 
- **accountId** | **string**| The external account number (int) or account ID Guid. | 
-
-### Return type
-
-[**PowerForm**](PowerForm.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="deletepowerform"></a>
-# **DeletePowerForm**
-> void DeletePowerForm (string accountId, string powerFormId)
+<a name="powerformsdeletepowerform"></a>
+# **PowerFormsDeletePowerForm**
+> void PowerFormsDeletePowerForm (string accountId, string powerFormId)
 
 Delete a PowerForm.
 
+
+
 ### Example
 ```csharp
 using System;
 using System.Diagnostics;
-using DocuSign.eSign.Api;
-using DocuSign.eSign.Client;
-using DocuSign.eSign.Model;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
 
 namespace Example
 {
-    public class DeletePowerFormExample
+    public class PowerFormsDeletePowerFormExample
     {
         public void main()
         {
@@ -104,11 +43,11 @@ namespace Example
             try
             {
                 // Delete a PowerForm.
-                apiInstance.DeletePowerForm(accountId, powerFormId);
+                apiInstance.PowerFormsDeletePowerForm(accountId, powerFormId);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling PowerFormsApi.DeletePowerForm: " + e.Message );
+                Debug.Print("Exception when calling PowerFormsApi.PowerFormsDeletePowerForm: " + e.Message );
             }
         }
     }
@@ -137,40 +76,42 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="deletepowerforms"></a>
-# **DeletePowerForms**
-> PowerFormsResponse DeletePowerForms (PowerFormsRequest powerFormsRequest = null, string accountId)
+<a name="powerformsdeletepowerformslist"></a>
+# **PowerFormsDeletePowerFormsList**
+> PowerFormsResponse PowerFormsDeletePowerFormsList (string accountId, PowerFormsRequest powerFormsRequest = null)
 
 Deletes one or more PowerForms
+
+
 
 ### Example
 ```csharp
 using System;
 using System.Diagnostics;
-using DocuSign.eSign.Api;
-using DocuSign.eSign.Client;
-using DocuSign.eSign.Model;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
 
 namespace Example
 {
-    public class DeletePowerFormsExample
+    public class PowerFormsDeletePowerFormsListExample
     {
         public void main()
         {
             
             var apiInstance = new PowerFormsApi();
-            var powerFormsRequest = new PowerFormsRequest(); // PowerFormsRequest |  (optional) 
             var accountId = accountId_example;  // string | The external account number (int) or account ID Guid.
+            var powerFormsRequest = new PowerFormsRequest(); // PowerFormsRequest |  (optional) 
 
             try
             {
                 // Deletes one or more PowerForms
-                PowerFormsResponse result = apiInstance.DeletePowerForms(powerFormsRequest, accountId);
+                PowerFormsResponse result = apiInstance.PowerFormsDeletePowerFormsList(accountId, powerFormsRequest);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling PowerFormsApi.DeletePowerForms: " + e.Message );
+                Debug.Print("Exception when calling PowerFormsApi.PowerFormsDeletePowerFormsList: " + e.Message );
             }
         }
     }
@@ -181,8 +122,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **powerFormsRequest** | [**PowerFormsRequest**](PowerFormsRequest.md)|  | [optional] 
  **accountId** | **string**| The external account number (int) or account ID Guid. | 
+ **powerFormsRequest** | [**PowerFormsRequest**](PowerFormsRequest.md)|  | [optional] 
 
 ### Return type
 
@@ -199,23 +140,25 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="getpowerform"></a>
-# **GetPowerForm**
-> PowerForm GetPowerForm (string accountId, string powerFormId)
+<a name="powerformsgetpowerform"></a>
+# **PowerFormsGetPowerForm**
+> PowerForms PowerFormsGetPowerForm (string accountId, string powerFormId)
 
 Returns a single PowerForm.
+
+
 
 ### Example
 ```csharp
 using System;
 using System.Diagnostics;
-using DocuSign.eSign.Api;
-using DocuSign.eSign.Client;
-using DocuSign.eSign.Model;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
 
 namespace Example
 {
-    public class GetPowerFormExample
+    public class PowerFormsGetPowerFormExample
     {
         public void main()
         {
@@ -227,12 +170,12 @@ namespace Example
             try
             {
                 // Returns a single PowerForm.
-                PowerForm result = apiInstance.GetPowerForm(accountId, powerFormId);
+                PowerForms result = apiInstance.PowerFormsGetPowerForm(accountId, powerFormId);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling PowerFormsApi.GetPowerForm: " + e.Message );
+                Debug.Print("Exception when calling PowerFormsApi.PowerFormsGetPowerForm: " + e.Message );
             }
         }
     }
@@ -248,7 +191,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**PowerForm**](PowerForm.md)
+[**PowerForms**](PowerForms.md)
 
 ### Authorization
 
@@ -261,106 +204,45 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="getpowerformdata"></a>
-# **GetPowerFormData**
-> PowerFormsFormDataResponse GetPowerFormData (string fromDate = null, string toDate = null, string accountId, string powerFormId)
-
-Returns the form data associated with the usage of a PowerForm.
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using DocuSign.eSign.Api;
-using DocuSign.eSign.Client;
-using DocuSign.eSign.Model;
-
-namespace Example
-{
-    public class GetPowerFormDataExample
-    {
-        public void main()
-        {
-            
-            var apiInstance = new PowerFormsApi();
-            var fromDate = fromDate_example;  // string |  (optional) 
-            var toDate = toDate_example;  // string |  (optional) 
-            var accountId = accountId_example;  // string | The external account number (int) or account ID Guid.
-            var powerFormId = powerFormId_example;  // string | 
-
-            try
-            {
-                // Returns the form data associated with the usage of a PowerForm.
-                PowerFormsFormDataResponse result = apiInstance.GetPowerFormData(fromDate, toDate, accountId, powerFormId);
-                Debug.WriteLine(result);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling PowerFormsApi.GetPowerFormData: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **fromDate** | **string**|  | [optional] 
- **toDate** | **string**|  | [optional] 
- **accountId** | **string**| The external account number (int) or account ID Guid. | 
- **powerFormId** | **string**|  | 
-
-### Return type
-
-[**PowerFormsFormDataResponse**](PowerFormsFormDataResponse.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: application/json
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="listpowerformsenders"></a>
-# **ListPowerFormSenders**
-> PowerFormSendersResponse ListPowerFormSenders (string startPosition = null, string accountId)
+<a name="powerformsgetpowerformslist"></a>
+# **PowerFormsGetPowerFormsList**
+> PowerFormsResponse PowerFormsGetPowerFormsList (string accountId, string fromDate = null, string order = null, string orderBy = null, string toDate = null)
 
 Returns the list of PowerForms available to the user.
 
+
+
 ### Example
 ```csharp
 using System;
 using System.Diagnostics;
-using DocuSign.eSign.Api;
-using DocuSign.eSign.Client;
-using DocuSign.eSign.Model;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
 
 namespace Example
 {
-    public class ListPowerFormSendersExample
+    public class PowerFormsGetPowerFormsListExample
     {
         public void main()
         {
             
             var apiInstance = new PowerFormsApi();
-            var startPosition = startPosition_example;  // string |  (optional) 
             var accountId = accountId_example;  // string | The external account number (int) or account ID Guid.
+            var fromDate = fromDate_example;  // string | Start of the search date range. Only returns templates created on or after this date/time. If no value is specified, there is no limit on the earliest date created. (optional) 
+            var order = order_example;  // string | An optional value that sets the direction order used to sort the item list.   Valid values are:   * asc = ascending sort order * desc = descending sort order  (optional) 
+            var orderBy = orderBy_example;  // string | An optional value that sets the file attribute used to sort the item list.   Valid values are:   * modified * name   (optional) 
+            var toDate = toDate_example;  // string | End of the search date range. Only returns templates created up to this date/time. If no value is provided, this defaults to the current date. (optional) 
 
             try
             {
                 // Returns the list of PowerForms available to the user.
-                PowerFormSendersResponse result = apiInstance.ListPowerFormSenders(startPosition, accountId);
+                PowerFormsResponse result = apiInstance.PowerFormsGetPowerFormsList(accountId, fromDate, order, orderBy, toDate);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling PowerFormsApi.ListPowerFormSenders: " + e.Message );
+                Debug.Print("Exception when calling PowerFormsApi.PowerFormsGetPowerFormsList: " + e.Message );
             }
         }
     }
@@ -371,8 +253,75 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **startPosition** | **string**|  | [optional] 
  **accountId** | **string**| The external account number (int) or account ID Guid. | 
+ **fromDate** | **string**| Start of the search date range. Only returns templates created on or after this date/time. If no value is specified, there is no limit on the earliest date created. | [optional] 
+ **order** | **string**| An optional value that sets the direction order used to sort the item list.   Valid values are:   * asc &#x3D; ascending sort order * desc &#x3D; descending sort order  | [optional] 
+ **orderBy** | **string**| An optional value that sets the file attribute used to sort the item list.   Valid values are:   * modified * name   | [optional] 
+ **toDate** | **string**| End of the search date range. Only returns templates created up to this date/time. If no value is provided, this defaults to the current date. | [optional] 
+
+### Return type
+
+[**PowerFormsResponse**](PowerFormsResponse.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="powerformsgetpowerformssenders"></a>
+# **PowerFormsGetPowerFormsSenders**
+> PowerFormSendersResponse PowerFormsGetPowerFormsSenders (string accountId, string startPosition = null)
+
+Returns the list of PowerForms available to the user.
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class PowerFormsGetPowerFormsSendersExample
+    {
+        public void main()
+        {
+            
+            var apiInstance = new PowerFormsApi();
+            var accountId = accountId_example;  // string | The external account number (int) or account ID Guid.
+            var startPosition = startPosition_example;  // string | The position within the total result set from which to start returning values. The value **thumbnail** may be used to return the page image. (optional) 
+
+            try
+            {
+                // Returns the list of PowerForms available to the user.
+                PowerFormSendersResponse result = apiInstance.PowerFormsGetPowerFormsSenders(accountId, startPosition);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PowerFormsApi.PowerFormsGetPowerFormsSenders: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **accountId** | **string**| The external account number (int) or account ID Guid. | 
+ **startPosition** | **string**| The position within the total result set from which to start returning values. The value **thumbnail** may be used to return the page image. | [optional] 
 
 ### Return type
 
@@ -389,43 +338,42 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="listpowerforms"></a>
-# **ListPowerForms**
-> PowerFormsResponse ListPowerForms (string fromDate = null, string order = null, string orderBy = null, string toDate = null, string accountId)
+<a name="powerformspostpowerform"></a>
+# **PowerFormsPostPowerForm**
+> PowerForms PowerFormsPostPowerForm (string accountId, PowerForms powerForms = null)
 
-Returns the list of PowerForms available to the user.
+Creates a new PowerForm.
+
+
 
 ### Example
 ```csharp
 using System;
 using System.Diagnostics;
-using DocuSign.eSign.Api;
-using DocuSign.eSign.Client;
-using DocuSign.eSign.Model;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
 
 namespace Example
 {
-    public class ListPowerFormsExample
+    public class PowerFormsPostPowerFormExample
     {
         public void main()
         {
             
             var apiInstance = new PowerFormsApi();
-            var fromDate = fromDate_example;  // string |  (optional) 
-            var order = order_example;  // string |  (optional) 
-            var orderBy = orderBy_example;  // string |  (optional) 
-            var toDate = toDate_example;  // string |  (optional) 
             var accountId = accountId_example;  // string | The external account number (int) or account ID Guid.
+            var powerForms = new PowerForms(); // PowerForms |  (optional) 
 
             try
             {
-                // Returns the list of PowerForms available to the user.
-                PowerFormsResponse result = apiInstance.ListPowerForms(fromDate, order, orderBy, toDate, accountId);
+                // Creates a new PowerForm.
+                PowerForms result = apiInstance.PowerFormsPostPowerForm(accountId, powerForms);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling PowerFormsApi.ListPowerForms: " + e.Message );
+                Debug.Print("Exception when calling PowerFormsApi.PowerFormsPostPowerForm: " + e.Message );
             }
         }
     }
@@ -436,15 +384,12 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **fromDate** | **string**|  | [optional] 
- **order** | **string**|  | [optional] 
- **orderBy** | **string**|  | [optional] 
- **toDate** | **string**|  | [optional] 
  **accountId** | **string**| The external account number (int) or account ID Guid. | 
+ **powerForms** | [**PowerForms**](PowerForms.md)|  | [optional] 
 
 ### Return type
 
-[**PowerFormsResponse**](PowerFormsResponse.md)
+[**PowerForms**](PowerForms.md)
 
 ### Authorization
 
@@ -457,41 +402,43 @@ No authorization required
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="updatepowerform"></a>
-# **UpdatePowerForm**
-> PowerForm UpdatePowerForm (PowerForm powerForm = null, string accountId, string powerFormId)
+<a name="powerformsputpowerform"></a>
+# **PowerFormsPutPowerForm**
+> PowerForms PowerFormsPutPowerForm (string accountId, string powerFormId, PowerForms powerForms = null)
 
 Creates a new PowerForm.
+
+
 
 ### Example
 ```csharp
 using System;
 using System.Diagnostics;
-using DocuSign.eSign.Api;
-using DocuSign.eSign.Client;
-using DocuSign.eSign.Model;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
 
 namespace Example
 {
-    public class UpdatePowerFormExample
+    public class PowerFormsPutPowerFormExample
     {
         public void main()
         {
             
             var apiInstance = new PowerFormsApi();
-            var powerForm = new PowerForm(); // PowerForm |  (optional) 
             var accountId = accountId_example;  // string | The external account number (int) or account ID Guid.
             var powerFormId = powerFormId_example;  // string | 
+            var powerForms = new PowerForms(); // PowerForms |  (optional) 
 
             try
             {
                 // Creates a new PowerForm.
-                PowerForm result = apiInstance.UpdatePowerForm(powerForm, accountId, powerFormId);
+                PowerForms result = apiInstance.PowerFormsPutPowerForm(accountId, powerFormId, powerForms);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling PowerFormsApi.UpdatePowerForm: " + e.Message );
+                Debug.Print("Exception when calling PowerFormsApi.PowerFormsPutPowerForm: " + e.Message );
             }
         }
     }
@@ -502,13 +449,13 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **powerForm** | [**PowerForm**](PowerForm.md)|  | [optional] 
  **accountId** | **string**| The external account number (int) or account ID Guid. | 
  **powerFormId** | **string**|  | 
+ **powerForms** | [**PowerForms**](PowerForms.md)|  | [optional] 
 
 ### Return type
 
-[**PowerForm**](PowerForm.md)
+[**PowerForms**](PowerForms.md)
 
 ### Authorization
 

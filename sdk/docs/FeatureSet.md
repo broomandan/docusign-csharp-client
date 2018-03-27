@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.FeatureSet
+# IO.Swagger.Model.FeatureSet
 ## Properties
 
 Name | Type | Description | Notes

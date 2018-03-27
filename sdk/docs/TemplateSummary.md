@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.TemplateSummary
+# IO.Swagger.Model.TemplateSummary
 ## Properties
 
 Name | Type | Description | Notes

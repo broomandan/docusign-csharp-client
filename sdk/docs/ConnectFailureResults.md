@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.ConnectFailureResults
+# IO.Swagger.Model.ConnectFailureResults
 ## Properties
 
 Name | Type | Description | Notes

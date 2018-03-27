@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.AuthenticationStatus
+# IO.Swagger.Model.AuthenticationStatus
 ## Properties
 
 Name | Type | Description | Notes

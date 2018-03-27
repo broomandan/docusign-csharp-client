@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.ProvisioningInformation
+# IO.Swagger.Model.ProvisioningInformation
 ## Properties
 
 Name | Type | Description | Notes

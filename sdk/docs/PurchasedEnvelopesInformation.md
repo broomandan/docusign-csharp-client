@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.PurchasedEnvelopesInformation
+# IO.Swagger.Model.PurchasedEnvelopesInformation
 ## Properties
 
 Name | Type | Description | Notes

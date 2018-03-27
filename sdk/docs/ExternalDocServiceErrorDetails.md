@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.ExternalDocServiceErrorDetails
+# IO.Swagger.Model.ExternalDocServiceErrorDetails
 ## Properties
 
 Name | Type | Description | Notes

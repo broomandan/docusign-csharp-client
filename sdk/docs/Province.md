@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.Province
+# IO.Swagger.Model.Province
 ## Properties
 
 Name | Type | Description | Notes

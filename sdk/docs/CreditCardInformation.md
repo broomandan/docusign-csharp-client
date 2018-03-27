@@ -1,9 +1,9 @@
-# DocuSign.eSign.Model.CreditCardInformation
+# IO.Swagger.Model.CreditCardInformation
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Address** | [**AddressInformation**](AddressInformation.md) |  | [optional] 
+**Address** | [**AddressInformation**](AddressInformation.md) | A complex element containing the credit card billing address information.   This can be the same as billing address and follows the same rules as billingAddress. It contains the following elements: street1, street2, city, state, zip, zipPlus4, phone, fax, and country. | [optional] 
 **CardNumber** | **string** | The number on the credit card. | [optional] 
 **CardType** | **string** | The credit card type. Valid values are: visa, mastercard, or amex. | [optional] 
 **ExpirationMonth** | **string** | The month that the credit card expires (1-12). | [optional] 

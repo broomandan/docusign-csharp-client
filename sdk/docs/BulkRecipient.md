@@ -1,14 +1,14 @@
-# DocuSign.eSign.Model.BulkRecipient
+# IO.Swagger.Model.BulkRecipient
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**AccessCode** | **string** | If a value is provided, the recipient must enter the value as the access code to view and sign the envelope.   Maximum Length: 50 characters and it must conform to the account’s access code format setting.  If blank, but the signer &#x60;accessCode&#x60; property is set in the envelope, then that value is used.  If blank and the signer &#x60;accessCode&#x60; property is not set, then the access code is not required. | [optional] 
+**AccessCode** | **string** | If a value is provided, the recipient must enter the value as the access code to view and sign the envelope.   Maximum Length: 50 characters and it must conform to the account&#39;s access code format setting.  If blank, but the signer &#x60;accessCode&#x60; property is set in the envelope, then that value is used.  If blank and the signer &#x60;accessCode&#x60; property is not set, then the access code is not required. | [optional] 
 **Email** | **string** | Specifies the recipient&#39;s email address.   Maximum length: 100 characters. | [optional] 
 **ErrorDetails** | [**List&lt;ErrorDetails&gt;**](ErrorDetails.md) | Array or errors. | [optional] 
 **Identification** | **string** | Specifies the authentication check used for the signer. If blank then no authentication check is required for the signer. Only one value can be used in this field.  The acceptable values are:  * KBA: Enables the normal ID check authentication set up for your account. * Phone: Enables phone authentication. * SMS: Enables SMS authentication. | [optional] 
 **Name** | **string** | Specifies the recipient&#39;s name.   Maximum length: 50 characters. | [optional] 
-**Note** | **string** | Specifies a note that is unique to this recipient. This note is sent to the recipient via the signing email. The note displays in the signing UI near the upper left corner of the document on the signing screen.  Maximum Length: 1000 characters. | [optional] 
+**Note** | **string** | A note sent to the recipient in the signing email. This note is unique to this recipient. In the user interface, it appears near the upper left corner of the document on the signing screen.  Maximum Length: 1000 characters.  | [optional] 
 **PhoneNumber** | **string** | This is only used if the Identification field value is Phone or SMS. The value for this field can be a valid telephone number or, if Phone, usersupplied (SMS authentication cannot use a user supplied number). Parenthesis and dashes can be used in the telephone number.  If &#x60;usersupplied&#x60; is used, the signer supplies his or her own telephone number. | [optional] 
 **RecipientSignatureProviderInfo** | [**List&lt;BulkRecipientSignatureProvider&gt;**](BulkRecipientSignatureProvider.md) |  | [optional] 
 **RowNumber** | **string** |  | [optional] 

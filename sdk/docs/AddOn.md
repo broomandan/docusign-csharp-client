@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.AddOn
+# IO.Swagger.Model.AddOn
 ## Properties
 
 Name | Type | Description | Notes

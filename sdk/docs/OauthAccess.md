@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.OauthAccess
+# IO.Swagger.Model.OauthAccess
 ## Properties
 
 Name | Type | Description | Notes

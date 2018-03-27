@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.RecipientDomain
+# IO.Swagger.Model.RecipientDomain
 ## Properties
 
 Name | Type | Description | Notes

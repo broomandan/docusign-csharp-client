@@ -1,9 +1,9 @@
-# DocuSign.eSign.Model.BillingInvoicesSummary
+# IO.Swagger.Model.BillingInvoicesSummary
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**BillingInvoices** | [**List&lt;BillingInvoice&gt;**](BillingInvoice.md) | Reserved: TBD | [optional] 
+**BillingInvoices** | [**List&lt;Invoices&gt;**](Invoices.md) | Reserved: TBD | [optional] 
 **PastDueBalance** | **string** |  | [optional] 
 **PaymentAllowed** | **string** |  | [optional] 
 

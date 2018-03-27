@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.EnvelopeTransactionStatus
+# IO.Swagger.Model.EnvelopeTransactionStatus
 ## Properties
 
 Name | Type | Description | Notes

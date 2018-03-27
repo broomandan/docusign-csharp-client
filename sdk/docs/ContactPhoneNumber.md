@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.ContactPhoneNumber
+# IO.Swagger.Model.ContactPhoneNumber
 ## Properties
 
 Name | Type | Description | Notes

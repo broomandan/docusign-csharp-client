@@ -1,10 +1,10 @@
-# DocuSign.eSign.Model.BillingPlanPreview
+# IO.Swagger.Model.BillingPlanPreview
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **CurrencyCode** | **string** | Specifies the ISO currency code for the account. | [optional] 
-**Invoice** | [**BillingInvoice**](BillingInvoice.md) |  | [optional] 
+**Invoice** | [**Invoices**](Invoices.md) |  | [optional] 
 **IsProrated** | **string** |  | [optional] 
 **SubtotalAmount** | **string** |  | [optional] 
 **TaxAmount** | **string** |  | [optional] 

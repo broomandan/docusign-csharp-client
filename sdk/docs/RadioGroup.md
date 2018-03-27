@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.RadioGroup
+# IO.Swagger.Model.RadioGroup
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.CreditCardTypes
+# IO.Swagger.Model.CreditCardTypes
 ## Properties
 
 Name | Type | Description | Notes

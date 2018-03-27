@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.ListCustomField
+# IO.Swagger.Model.ListCustomField
 ## Properties
 
 Name | Type | Description | Notes

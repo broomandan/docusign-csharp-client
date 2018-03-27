@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.SupportedLanguages
+# IO.Swagger.Model.SupportedLanguages
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.AccountBillingPlan
+# IO.Swagger.Model.AccountBillingPlan
 ## Properties
 
 Name | Type | Description | Notes
@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 **PerSeatPrice** | **string** |  | [optional] 
 **PlanClassification** | **string** | Identifies the type of plan. Examples include Business, Corporate, Enterprise, Free. | [optional] 
 **PlanFeatureSets** | [**List&lt;FeatureSet&gt;**](FeatureSet.md) | A complex type that sets the feature sets for the account. It contains the following information (all string content):  * currencyFeatureSetPrices - Contains the currencyCode and currencySymbol for the alternate currency values for envelopeFee, fixedFee, seatFee that are configured for this plan feature set. * envelopeFee - An incremental envelope cost for plans with envelope overages (when isEnabled&#x3D;true). * featureSetId - A unique ID for the feature set. * fixedFee - A one-time fee associated with the plan (when isEnabled&#x3D;true). * isActive - Specifies whether the feature set is actively set as part of the plan. * isEnabled - Specifies whether the feature set is actively enabled as part of the plan. * name - The name of the feature set. * seatFee - An incremental seat cost for seat-based plans (when isEnabled&#x3D;true).  | [optional] 
-**PlanId** | **string** |  | [optional] 
+**PlanId** | **string** | The DocuSign Plan ID for the account. | [optional] 
 **PlanName** | **string** | The name of the Billing Plan. | [optional] 
 **RenewalStatus** | **string** | The renewal status for the account. The acceptable values are:  * auto: The account automatically renews. * queued_for_close: Account will be closed at the billingPeriodEndDate. * queued_for_downgrade: Account will be downgraded at the billingPeriodEndDate. | [optional] 
 **SeatDiscounts** | [**List&lt;SeatDiscount&gt;**](SeatDiscount.md) |  A complex type that contains any seat discount information.  Values are: BeginSeatCount, EndSeatCount, and SeatDiscountPercent.   | [optional] 

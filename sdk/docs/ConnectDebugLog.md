@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.ConnectDebugLog
+# IO.Swagger.Model.ConnectDebugLog
 ## Properties
 
 Name | Type | Description | Notes

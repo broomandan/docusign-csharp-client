@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.UserInfoList
+# IO.Swagger.Model.UserInfoList
 ## Properties
 
 Name | Type | Description | Notes

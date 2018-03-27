@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.EnvelopeIdsRequest
+# IO.Swagger.Model.EnvelopeIdsRequest
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.PageRequest
+# IO.Swagger.Model.PageRequest
 ## Properties
 
 Name | Type | Description | Notes

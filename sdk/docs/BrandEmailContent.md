@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.BrandEmailContent
+# IO.Swagger.Model.BrandEmailContent
 ## Properties
 
 Name | Type | Description | Notes

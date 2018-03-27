@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.PostTransactionsResponse
+# IO.Swagger.Model.PostTransactionsResponse
 ## Properties
 
 Name | Type | Description | Notes

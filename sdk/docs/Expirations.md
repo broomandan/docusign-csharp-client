@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.Expirations
+# IO.Swagger.Model.Expirations
 ## Properties
 
 Name | Type | Description | Notes

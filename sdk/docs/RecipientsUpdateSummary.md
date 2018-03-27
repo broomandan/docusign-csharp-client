@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.RecipientsUpdateSummary
+# IO.Swagger.Model.RecipientsUpdateSummary
 ## Properties
 
 Name | Type | Description | Notes

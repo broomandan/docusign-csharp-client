@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.LoginAccount
+# IO.Swagger.Model.LoginAccount
 ## Properties
 
 Name | Type | Description | Notes
@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **LoginUserSettings** | [**List&lt;NameValue&gt;**](NameValue.md) | A list of user-level settings that indicate what user-specific features are available. | [optional] 
 **Name** | **string** | The name associated with the account. | [optional] 
 **SiteDescription** | **string** | An optional descirption of the site that hosts the account. | [optional] 
-**UserId** | **string** |  | [optional] 
+**UserId** | **string** | The user ID of the user being accessed. Generally this is the user ID of the authenticated user, but if the authenticated user is an Admin on the account, this may be another user the Admin user is accessing. | [optional] 
 **UserName** | **string** | The name of this user as defined by the account. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

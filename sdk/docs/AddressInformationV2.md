@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.AddressInformationV2
+# IO.Swagger.Model.AddressInformationV2
 ## Properties
 
 Name | Type | Description | Notes

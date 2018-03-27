@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.AccountSignatureProvider
+# IO.Swagger.Model.AccountSignatureProvider
 ## Properties
 
 Name | Type | Description | Notes
@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **Priority** | **string** |  | [optional] 
 **SignatureProviderDisplayName** | **string** |  | [optional] 
 **SignatureProviderId** | **string** |  | [optional] 
-**SignatureProviderName** | **string** |  | [optional] 
+**SignatureProviderName** | **string** | The name of an Electronic or Standards Based Signature (digital signature) provider for the signer to use. [The current provider list.](../../../../guide/appendix/standards_based_signatures.html#signature-provider-options) | [optional] 
 **SignatureProviderOptionsMetadata** | [**List&lt;AccountSignatureProviderOption&gt;**](AccountSignatureProviderOption.md) |  | [optional] 
 **SignatureProviderRequiredOptions** | [**List&lt;SignatureProviderRequiredOption&gt;**](SignatureProviderRequiredOption.md) |  | [optional] 
 

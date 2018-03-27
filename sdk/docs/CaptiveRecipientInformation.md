@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.CaptiveRecipientInformation
+# IO.Swagger.Model.CaptiveRecipientInformation
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.FileTypeList
+# IO.Swagger.Model.FileTypeList
 ## Properties
 
 Name | Type | Description | Notes

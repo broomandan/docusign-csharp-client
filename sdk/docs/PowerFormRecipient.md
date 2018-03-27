@@ -1,9 +1,9 @@
-# DocuSign.eSign.Model.PowerFormRecipient
+# IO.Swagger.Model.PowerFormRecipient
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**AccessCode** | **string** | If a value is provided, the recipient must enter the value as the access code to view and sign the envelope.   Maximum Length: 50 characters and it must conform to the account’s access code format setting.  If blank, but the signer &#x60;accessCode&#x60; property is set in the envelope, then that value is used.  If blank and the signer &#x60;accessCode&#x60; property is not set, then the access code is not required. | [optional] 
+**AccessCode** | **string** | If a value is provided, the recipient must enter the value as the access code to view and sign the envelope.   Maximum Length: 50 characters and it must conform to the account&#39;s access code format setting.  If blank, but the signer &#x60;accessCode&#x60; property is set in the envelope, then that value is used.  If blank and the signer &#x60;accessCode&#x60; property is not set, then the access code is not required. | [optional] 
 **AccessCodeLocked** | **string** |  | [optional] 
 **AccessCodeRequired** | **string** |  | [optional] 
 **Email** | **string** |  | [optional] 

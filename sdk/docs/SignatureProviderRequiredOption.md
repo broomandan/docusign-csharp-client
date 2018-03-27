@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.SignatureProviderRequiredOption
+# IO.Swagger.Model.SignatureProviderRequiredOption
 ## Properties
 
 Name | Type | Description | Notes

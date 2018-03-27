@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.TextCustomField
+# IO.Swagger.Model.TextCustomField
 ## Properties
 
 Name | Type | Description | Notes

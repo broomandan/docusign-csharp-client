@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.PlanInformation
+# IO.Swagger.Model.PlanInformation
 ## Properties
 
 Name | Type | Description | Notes

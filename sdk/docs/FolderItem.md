@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.FolderItem
+# IO.Swagger.Model.FolderItem
 ## Properties
 
 Name | Type | Description | Notes
@@ -6,12 +6,12 @@ Name | Type | Description | Notes
 **CompletedDateTime** | **string** | Specifies the date and time this item was completed. | [optional] 
 **CreatedDateTime** | **string** | Indicates the date and time the item was created. | [optional] 
 **CustomFields** | [**List&lt;CustomFieldV2&gt;**](CustomFieldV2.md) | An optional array of strings that allows the sender to provide custom data about the recipient. This information is returned in the envelope status but otherwise not used by DocuSign. Each customField string can be a maximum of 100 characters. | [optional] 
-**Description** | **string** |  | [optional] 
+**Description** | **string** | A sender-defined description of the line item.  | [optional] 
 **EnvelopeId** | **string** | The envelope ID of the envelope status that failed to post. | [optional] 
 **EnvelopeUri** | **string** | Contains a URI for an endpoint that you can use to retrieve the envelope or envelopes. | [optional] 
 **Is21CFRPart11** | **string** | When set to **true**, indicates that this module is enabled on the account. | [optional] 
 **IsSignatureProviderEnvelope** | **string** |  | [optional] 
-**LastModified** | **string** |  | [optional] 
+**LastModified** | **string** | Utc date and time the comment was last updated (can only be done by creator.) | [optional] 
 **Name** | **string** |  | [optional] 
 **OwnerName** | **string** | Name of the envelope owner. | [optional] 
 **PageCount** | **int?** |  | [optional] 

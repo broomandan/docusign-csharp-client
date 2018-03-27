@@ -1,12 +1,12 @@
-# DocuSign.eSign.Model.Title
+# IO.Swagger.Model.Title
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**AnchorCaseSensitive** | **string** | When set to **true**, the anchor string does not consider case when matching strings in the document. The default value is **true**. | [optional] 
-**AnchorHorizontalAlignment** | **string** | Specifies the alignment of anchor tabs with anchor strings. Possible values are **left** or **right**. The default value is **left**. | [optional] 
+**AnchorCaseSensitive** | **string** | Reserved for DocuSign. &lt;!- - When set to **true**, the anchor string does not consider case when matching strings in the document. The default value is **true**. - -&gt; | [optional] 
+**AnchorHorizontalAlignment** | **string** | Reserved for DocuSign. &lt;!- - Specifies the alignment of anchor tabs with anchor strings. Possible values are **left** or **right**. The default value is **left**. - -&gt;  | [optional] 
 **AnchorIgnoreIfNotPresent** | **string** | When set to **true**, this tab is ignored if anchorString is not found in the document. | [optional] 
-**AnchorMatchWholeWord** | **string** | When set to **true**, the anchor string in this tab matches whole words only (strings embedded in other strings are ignored.) The default value is **true**. | [optional] 
+**AnchorMatchWholeWord** | **string** | Reserved for DocuSign. &lt;!- - When set to **true**, the anchor string in this tab matches whole words only (strings embedded in other strings are ignored.) The default value is **true**. - -&gt;  | [optional] 
 **AnchorString** | **string** | Anchor text information for a radio button. | [optional] 
 **AnchorUnits** | **string** | Specifies units of the X and Y offset. Units could be pixels, millimeters, centimeters, or inches. | [optional] 
 **AnchorXOffset** | **string** | Specifies the X axis location of the tab, in achorUnits, relative to the anchorString. | [optional] 
@@ -28,19 +28,19 @@ Name | Type | Description | Notes
 **MergeField** | [**MergeField**](MergeField.md) |  | [optional] 
 **Name** | **string** |  | [optional] 
 **OriginalValue** | **string** | The initial value of the tab when it was sent to the recipient.  | [optional] 
-**PageNumber** | **string** | Specifies the page number on which the tab is located. | [optional] 
+**PageNumber** | **string** | Specifies the page number on which the tab is located. Must be 1 for [supplemental documents][supdocs].  [supdocs]: /esign/guide/appendix/glossary.html#supplemental-documents  | [optional] 
 **RecipientId** | **string** | Unique for the recipient. It is used by the tab element to indicate which recipient is to sign the Document. | [optional] 
 **Required** | **string** | When set to **true**, the signer is required to fill out this tab | [optional] 
 **Status** | **string** | Indicates the envelope status. Valid values are:  * sent - The envelope is sent to the recipients.  * created - The envelope is saved as a draft and can be modified and sent later. | [optional] 
 **TabId** | **string** | The unique identifier for the tab. The tabid can be retrieved with the [ML:GET call].      | [optional] 
-**TabLabel** | **string** | The label string associated with the tab. | [optional] 
+**TabLabel** | **string** | The label string associated with the tab. The string may be the empty string. If no value is provided, the tab type is used as the value.  Maximum of 500 characters.  | [optional] 
 **TabOrder** | **string** |  | [optional] 
 **TemplateLocked** | **string** | When set to **true**, the sender cannot change any attributes of the recipient. Used only when working with template recipients.  | [optional] 
 **TemplateRequired** | **string** | When set to **true**, the sender may not remove the recipient. Used only when working with template recipients. | [optional] 
 **Underline** | **string** | When set to **true**, the information in the tab is underlined. | [optional] 
 **Value** | **string** | Specifies the value of the tab.  | [optional] 
 **Width** | **int?** | Width of the tab in pixels. | [optional] 
-**XPosition** | **string** | This indicates the horizontal offset of the object on the page. DocuSign uses 72 DPI when determining position. | [optional] 
+**XPosition** | **string** | This indicates the horizontal offset of the object on the page. DocuSign uses 72 DPI when determining position. Required. May be zero.  | [optional] 
 **YPosition** | **string** | This indicates the vertical offset of the object on the page. DocuSign uses 72 DPI when determining position. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

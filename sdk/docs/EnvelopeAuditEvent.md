@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.EnvelopeAuditEvent
+# IO.Swagger.Model.EnvelopeAuditEvent
 ## Properties
 
 Name | Type | Description | Notes

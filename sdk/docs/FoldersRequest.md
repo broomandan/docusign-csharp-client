@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.FoldersRequest
+# IO.Swagger.Model.FoldersRequest
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.Reminders
+# IO.Swagger.Model.Reminders
 ## Properties
 
 Name | Type | Description | Notes

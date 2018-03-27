@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.MemberGroupSharedItem
+# IO.Swagger.Model.MemberGroupSharedItem
 ## Properties
 
 Name | Type | Description | Notes

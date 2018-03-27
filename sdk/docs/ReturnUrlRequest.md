@@ -1,9 +1,9 @@
-# DocuSign.eSign.Model.ReturnUrlRequest
+# IO.Swagger.Model.ReturnUrlRequest
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ReturnUrl** | **string** | Identifies the return point after sending the envelope. DocuSign returns to the URL and includes an event parameter that can be used to redirect the recipient to another location. The possible event parameters returned are:   * send (user sends the envelope) * save (user saves the envelope) * cancel (user cancels the sending transaction. No envelopeId is returned in this case.) * error (there is an error when performing the send) * sessionEnd (the sending session ends before the user completes another action). | [optional] 
+**ReturnUrl** | **string** | Your app&#39;s return url that the user will be redirected to after sending the envelope or completing the sending/tagging view. Query parameters &#x60;envelopeId&#x60; and &#x60;event&#x60; will be added to the URL. The event parameter values:   * &#x60;Send&#x60; (the user sent the envelope) * &#x60;Save&#x60; (the user saved the envelope, it is still a draft) * &#x60;Cancel&#x60; (the user canceled the sending transaction) * &#x60;Error&#x60; (there was an error during the send operation) * &#x60;SessionEnd&#x60; (the sending session ended before the user completed a different action) | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

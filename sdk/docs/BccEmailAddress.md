@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.BccEmailAddress
+# IO.Swagger.Model.BccEmailAddress
 ## Properties
 
 Name | Type | Description | Notes

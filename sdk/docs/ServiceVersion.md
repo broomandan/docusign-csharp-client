@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.ServiceVersion
+# IO.Swagger.Model.ServiceVersion
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.BrandLink
+# IO.Swagger.Model.BrandLink
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.FolderItemV2
+# IO.Swagger.Model.FolderItemV2
 ## Properties
 
 Name | Type | Description | Notes
@@ -8,13 +8,13 @@ Name | Type | Description | Notes
 **EnvelopeId** | **string** | The envelope ID of the envelope status that failed to post. | [optional] 
 **EnvelopeUri** | **string** | Contains a URI for an endpoint that you can use to retrieve the envelope or envelopes. | [optional] 
 **ExpireDateTime** | **string** | The date and time the envelope is set to expire. | [optional] 
-**FolderId** | **string** |  | [optional] 
+**FolderId** | **string** | The ID of the folder being accessed. | [optional] 
 **FolderUri** | **string** |  | [optional] 
 **Is21CFRPart11** | **string** | When set to **true**, indicates that this module is enabled on the account. | [optional] 
 **IsSignatureProviderEnvelope** | **string** |  | [optional] 
 **LastModifiedDateTime** | **string** | The date and time the item was last modified. | [optional] 
 **OwnerName** | **string** |  | [optional] 
-**Recipients** | [**Recipients**](Recipients.md) |  | [optional] 
+**Recipients** | [**EnvelopeRecipients**](EnvelopeRecipients.md) |  | [optional] 
 **RecipientsUri** | **string** | Contains a URI for an endpoint that you can use to retrieve the recipients. | [optional] 
 **SenderCompany** | **string** |  | [optional] 
 **SenderEmail** | **string** |  | [optional] 

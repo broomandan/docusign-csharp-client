@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.CloudStorageProviders
+# IO.Swagger.Model.CloudStorageProviders
 ## Properties
 
 Name | Type | Description | Notes

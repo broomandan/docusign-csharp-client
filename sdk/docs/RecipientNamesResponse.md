@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.RecipientNamesResponse
+# IO.Swagger.Model.RecipientNamesResponse
 ## Properties
 
 Name | Type | Description | Notes

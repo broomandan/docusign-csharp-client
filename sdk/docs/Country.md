@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.Country
+# IO.Swagger.Model.Country
 ## Properties
 
 Name | Type | Description | Notes

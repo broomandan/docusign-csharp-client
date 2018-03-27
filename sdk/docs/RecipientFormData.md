@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.RecipientFormData
+# IO.Swagger.Model.RecipientFormData
 ## Properties
 
 Name | Type | Description | Notes

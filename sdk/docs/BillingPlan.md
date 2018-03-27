@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.BillingPlan
+# IO.Swagger.Model.BillingPlan
 ## Properties
 
 Name | Type | Description | Notes
@@ -12,8 +12,8 @@ Name | Type | Description | Notes
 **PaymentMethod** | **string** |  | [optional] 
 **PerSeatPrice** | **string** | The per seat price for the plan. | [optional] 
 **PlanClassification** | **string** | Identifies the type of plan. Examples include Business, Corporate, Enterprise, Free. | [optional] 
-**PlanFeatureSets** | [**List&lt;FeatureSet&gt;**](FeatureSet.md) |  | [optional] 
-**PlanId** | **string** |  | [optional] 
+**PlanFeatureSets** | [**List&lt;FeatureSet&gt;**](FeatureSet.md) | A complex type that sets the feature sets for the account. | [optional] 
+**PlanId** | **string** | The DocuSign Plan ID for the account. | [optional] 
 **PlanName** | **string** | The name of the Billing Plan. | [optional] 
 **SeatDiscounts** | [**List&lt;SeatDiscount&gt;**](SeatDiscount.md) |  | [optional] 
 **SupportIncidentFee** | **string** | The support incident fee charged for each support incident. | [optional] 

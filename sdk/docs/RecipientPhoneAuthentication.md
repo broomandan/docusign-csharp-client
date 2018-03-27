@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.RecipientPhoneAuthentication
+# IO.Swagger.Model.RecipientPhoneAuthentication
 ## Properties
 
 Name | Type | Description | Notes

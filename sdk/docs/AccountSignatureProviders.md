@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.AccountSignatureProviders
+# IO.Swagger.Model.AccountSignatureProviders
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.ErrorDetails
+# IO.Swagger.Model.ErrorDetails
 ## Properties
 
 Name | Type | Description | Notes

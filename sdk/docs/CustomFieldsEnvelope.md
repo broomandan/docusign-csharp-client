@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.CustomFieldsEnvelope
+# IO.Swagger.Model.CustomFieldsEnvelope
 ## Properties
 
 Name | Type | Description | Notes

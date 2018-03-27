@@ -1,12 +1,12 @@
-# DocuSign.eSign.Model.List
+# IO.Swagger.Model.List
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**AnchorCaseSensitive** | **string** | When set to **true**, the anchor string does not consider case when matching strings in the document. The default value is **true**. | [optional] 
-**AnchorHorizontalAlignment** | **string** | Specifies the alignment of anchor tabs with anchor strings. Possible values are **left** or **right**. The default value is **left**. | [optional] 
+**AnchorCaseSensitive** | **string** | Reserved for DocuSign. &lt;!- - When set to **true**, the anchor string does not consider case when matching strings in the document. The default value is **true**. - -&gt; | [optional] 
+**AnchorHorizontalAlignment** | **string** | Reserved for DocuSign. &lt;!- - Specifies the alignment of anchor tabs with anchor strings. Possible values are **left** or **right**. The default value is **left**. - -&gt;  | [optional] 
 **AnchorIgnoreIfNotPresent** | **string** | When set to **true**, this tab is ignored if anchorString is not found in the document. | [optional] 
-**AnchorMatchWholeWord** | **string** | When set to **true**, the anchor string in this tab matches whole words only (strings embedded in other strings are ignored.) The default value is **true**. | [optional] 
+**AnchorMatchWholeWord** | **string** | Reserved for DocuSign. &lt;!- - When set to **true**, the anchor string in this tab matches whole words only (strings embedded in other strings are ignored.) The default value is **true**. - -&gt;  | [optional] 
 **AnchorString** | **string** | Anchor text information for a radio button. | [optional] 
 **AnchorUnits** | **string** | Specifies units of the X and Y offset. Units could be pixels, millimeters, centimeters, or inches. | [optional] 
 **AnchorXOffset** | **string** | Specifies the X axis location of the tab, in achorUnits, relative to the anchorString. | [optional] 
@@ -24,7 +24,7 @@ Name | Type | Description | Notes
 **ListItems** | [**List&lt;ListItem&gt;**](ListItem.md) | The list of values that can be selected by senders. The list values are separated by semi-colons. Example: [one;two;three;four]  Maximum Length of listItems:  2048 characters. Maximum Length of items in the list: 100 characters.   | [optional] 
 **Locked** | **string** | When set to **true**, the signer cannot change the data of the custom tab. | [optional] 
 **MergeField** | [**MergeField**](MergeField.md) |  | [optional] 
-**PageNumber** | **string** | Specifies the page number on which the tab is located. | [optional] 
+**PageNumber** | **string** | Specifies the page number on which the tab is located. Must be 1 for [supplemental documents][supdocs].  [supdocs]: /esign/guide/appendix/glossary.html#supplemental-documents  | [optional] 
 **RecipientId** | **string** | Unique for the recipient. It is used by the tab element to indicate which recipient is to sign the Document. | [optional] 
 **RequireAll** | **string** | When set to **true** and shared is true, information must be entered in this field to complete the envelope.  | [optional] 
 **Required** | **string** | When set to **true**, the signer is required to fill out this tab | [optional] 
@@ -33,14 +33,14 @@ Name | Type | Description | Notes
 **Shared** | **string** | When set to **true**, this custom tab is shared. | [optional] 
 **Status** | **string** | Indicates the envelope status. Valid values are:  * sent - The envelope is sent to the recipients.  * created - The envelope is saved as a draft and can be modified and sent later. | [optional] 
 **TabId** | **string** | The unique identifier for the tab. The tabid can be retrieved with the [ML:GET call].      | [optional] 
-**TabLabel** | **string** | The label string associated with the tab. | [optional] 
+**TabLabel** | **string** | The label string associated with the tab. The string may be the empty string. If no value is provided, the tab type is used as the value.  Maximum of 500 characters.  | [optional] 
 **TabOrder** | **string** |  | [optional] 
 **TemplateLocked** | **string** | When set to **true**, the sender cannot change any attributes of the recipient. Used only when working with template recipients.  | [optional] 
 **TemplateRequired** | **string** | When set to **true**, the sender may not remove the recipient. Used only when working with template recipients. | [optional] 
 **Underline** | **string** | When set to **true**, the information in the tab is underlined. | [optional] 
 **Value** | **string** | The value to use when the item is selected. | [optional] 
 **Width** | **int?** | Width of the tab in pixels. | [optional] 
-**XPosition** | **string** | This indicates the horizontal offset of the object on the page. DocuSign uses 72 DPI when determining position. | [optional] 
+**XPosition** | **string** | This indicates the horizontal offset of the object on the page. DocuSign uses 72 DPI when determining position. Required. May be zero.  | [optional] 
 **YPosition** | **string** | This indicates the vertical offset of the object on the page. DocuSign uses 72 DPI when determining position. | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

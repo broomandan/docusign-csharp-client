@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.BillingPlanUpdateResponse
+# IO.Swagger.Model.BillingPlanUpdateResponse
 ## Properties
 
 Name | Type | Description | Notes
@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **IncludedSeats** | **string** | The number of seats (users) included. | [optional] 
 **PaymentCycle** | **string** |  | [optional] 
 **PaymentMethod** | **string** |  | [optional] 
-**PlanId** | **string** |  | [optional] 
+**PlanId** | **string** | The DocuSign Plan ID for the account. | [optional] 
 **PlanName** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

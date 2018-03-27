@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.AppStoreProduct
+# IO.Swagger.Model.AppStoreProduct
 ## Properties
 
 Name | Type | Description | Notes

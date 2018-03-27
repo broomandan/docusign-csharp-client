@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.AccountPasswordRules
+# IO.Swagger.Model.AccountPasswordRules
 ## Properties
 
 Name | Type | Description | Notes

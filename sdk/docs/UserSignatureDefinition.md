@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.UserSignatureDefinition
+# IO.Swagger.Model.UserSignatureDefinition
 ## Properties
 
 Name | Type | Description | Notes

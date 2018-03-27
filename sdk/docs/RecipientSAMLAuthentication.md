@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.RecipientSAMLAuthentication
+# IO.Swagger.Model.RecipientSAMLAuthentication
 ## Properties
 
 Name | Type | Description | Notes

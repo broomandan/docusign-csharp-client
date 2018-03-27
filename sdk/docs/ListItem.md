@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.ListItem
+# IO.Swagger.Model.ListItem
 ## Properties
 
 Name | Type | Description | Notes

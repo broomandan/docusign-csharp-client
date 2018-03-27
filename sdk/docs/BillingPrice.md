@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.BillingPrice
+# IO.Swagger.Model.BillingPrice
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.ReferralInformation
+# IO.Swagger.Model.ReferralInformation
 ## Properties
 
 Name | Type | Description | Notes

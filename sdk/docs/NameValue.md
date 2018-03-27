@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.NameValue
+# IO.Swagger.Model.NameValue
 ## Properties
 
 Name | Type | Description | Notes

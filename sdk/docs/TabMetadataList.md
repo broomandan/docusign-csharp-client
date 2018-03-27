@@ -1,9 +1,9 @@
-# DocuSign.eSign.Model.TabMetadataList
+# IO.Swagger.Model.TabMetadataList
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Tabs** | [**List&lt;TabMetadata&gt;**](TabMetadata.md) |  | [optional] 
+**Tabs** | [**List&lt;CustomTabs&gt;**](CustomTabs.md) |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

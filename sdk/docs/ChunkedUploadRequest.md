@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.ChunkedUploadRequest
+# IO.Swagger.Model.ChunkedUploadRequest
 ## Properties
 
 Name | Type | Description | Notes

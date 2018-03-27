@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.DocumentTemplate
+# IO.Swagger.Model.DocumentTemplate
 ## Properties
 
 Name | Type | Description | Notes

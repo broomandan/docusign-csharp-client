@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.LockRequest
+# IO.Swagger.Model.LockRequest
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.DocumentVisibility
+# IO.Swagger.Model.DocumentVisibility
 ## Properties
 
 Name | Type | Description | Notes

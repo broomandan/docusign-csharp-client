@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.Attachment
+# IO.Swagger.Model.Attachment
 ## Properties
 
 Name | Type | Description | Notes

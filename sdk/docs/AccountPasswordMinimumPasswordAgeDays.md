@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.AccountPasswordMinimumPasswordAgeDays
+# IO.Swagger.Model.AccountPasswordMinimumPasswordAgeDays
 ## Properties
 
 Name | Type | Description | Notes

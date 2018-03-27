@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.PaymentProcessorInformation
+# IO.Swagger.Model.PaymentProcessorInformation
 ## Properties
 
 Name | Type | Description | Notes

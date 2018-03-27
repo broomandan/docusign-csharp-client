@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.ApiRequestLogsResult
+# IO.Swagger.Model.ApiRequestLogsResult
 ## Properties
 
 Name | Type | Description | Notes

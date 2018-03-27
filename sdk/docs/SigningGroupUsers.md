@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.SigningGroupUsers
+# IO.Swagger.Model.SigningGroupUsers
 ## Properties
 
 Name | Type | Description | Notes

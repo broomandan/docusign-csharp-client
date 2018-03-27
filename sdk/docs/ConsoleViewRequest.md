@@ -1,4 +1,4 @@
-# DocuSign.eSign.Model.ConsoleViewRequest
+# IO.Swagger.Model.ConsoleViewRequest
 ## Properties
 
 Name | Type | Description | Notes
