@@ -9,7 +9,8 @@ You can sign up for a free [developer sandbox](https://www.docusign.com/develope
 Requirements
 ============
 
-Microsoft .NET version 4.5 or later.
+Microsoft NET Core Runtime 2.0
+
 
 Installation
 ============
